@@ -1,0 +1,14 @@
+p=int(input('principal amount'))
+t=int(input('time period'))
+r=int(input('rate of intrest'))
+si=p*t*r/100
+emi=(si+p)/(t*12)
+print('EMI amount is',emi)
+
+OUTPUT:
+principal amount10000
+time period2
+rate of intrest5
+EMI amount is 458.3333333333333
+
+

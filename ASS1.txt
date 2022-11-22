@@ -1,0 +1,29 @@
+sno=int(input('enter the student number'));
+name=input('name of the student');
+gender=input('enter the gender');
+group=input('enter the group');
+address=input('enter the address');
+phonenumber=int(input('enter the number'));
+degree_percentage=int(input('enter the percentage'))
+print('sno',sno);
+print('name',name);
+print('gender',gender);
+print('address',address);
+print('phonenumber',phonenumber);
+print('degree_percentage',degree_percentage);
+     
+
+OUTPUT:
+enter the student number2161250456
+name of the studentsanyasirao
+enter the gendermale
+enter the groupmcsair
+enter the address near notary shop,URAVASI JN
+enter the number8639021099
+enter the percentage99
+sno 2161250456
+name sanyasirao
+gender male
+address  near notary shop,URAVASI JN
+phonenumber 8639021099
+degree_percentage 99
