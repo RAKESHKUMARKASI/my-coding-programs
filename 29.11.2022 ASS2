@@ -1,0 +1,38 @@
+
+eno=int(input('Enter emp no: '))
+ename=input('Enter emp name: ')
+design=input('Enter emp designation: ')
+basicsal=int(input('Enter emp basic salary: '))
+da=int(input('Enter emp daily allowance: '))
+ta=int(input('Enter emp travelling allowance: '))
+hra=int(input('Enter emp house rental allowance: '))
+netsalary=basicsal+da+ta+hra
+print('EMPLOYEE SNo ',eno)
+print('EMPLOYEE NAME ',ename)
+print('EMPLOYEE DESIGNATION ',design)
+print('EMPLOYEE SALARY ',netsalary)
+if netsalary>100000:
+    tax=netsalary*10/100
+elif netsalary>50000 and netsalary<=100000:
+    tax=netsalary*7/100
+elif netsalary>40000 and netsalary<=50000:
+    tax=netsalary*4/100
+elif netsalary>20000 and netsalary<=40000:
+    tax=netsalary*2/100
+else:
+    tax=0
+print('TAX ',tax)
+
+OUTPUT :
+Enter emp no: 1111
+Enter emp name: K.Rakesh
+Enter emp designation: General Manager
+Enter emp basic salary: 300000
+Enter emp daily allowance: 12000
+Enter emp travelling allowance: 5000
+Enter emp house rental allowance: 15000
+EMPLOYEE SNo  1111
+EMPLOYEE NAME  K.Rakesh
+EMPLOYEE DESIGNATION  General Manager
+EMPLOYEE SALARY  332000
+TAX  33200.0
