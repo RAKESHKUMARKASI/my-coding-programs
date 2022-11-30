@@ -1,0 +1,25 @@
+stuno=int(input('Enter Student ID: '))
+stuname=input('Enter Student Name: ')
+group=input('Enter Student Group: ')
+s1=int(input('Enter Subject1 marks'))
+s2=int(input('Enter Subject2 marks'))
+s3=int(input('Enter Subject3 marks'))
+print('ID: ',stuno)
+print('NAME: ',stuname)
+print('GROUP: ',group)
+if s1>=35 and s2>=35 and s3>=35:
+    print('RESULT: PASS')
+else:
+    print('RESULT: FAIL')
+
+OUTPUT :
+Enter Student ID: 2857
+Enter Student Name: K.Rakesh
+Enter Student Group: MAIRCS
+Enter Subject1 marks 94
+Enter Subject2 marks 89
+Enter Subject3 marks 32
+ID:  2857
+NAME:  K.Rakesh
+GROUP:  MAIRCS
+RESULT: FAIL
