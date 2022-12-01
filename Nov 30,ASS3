@@ -1,0 +1,29 @@
+cname=input('Enter Customer Name:')
+cno=int(input('Enter Customer Number:'))
+prv=int(input('Enter preveious meter reading:'))
+pre=int(input('Enter present meter reading:'))
+units=pre-prv
+print('UNITS=',units)
+if units<=50:
+    charge=80
+elif units>=51 and units<=150:    
+    charge=80+(units-50)*2.50
+elif units>=151 and units<=300:
+    charge=80+100*2.50+(units-150)*4.25
+elif units>=301 and units<=600:
+    charge=80+100*2.50+150*4.25+(units-300)*6.50
+else:
+    charge=80+100*2.50+150*4.25+300*6.50+(units-600)*11
+print('NAME:',cname)
+print('NO:',cno)
+print('BILL=',charge)
+  
+OUTPUT :
+Enter Customer Name:Rakesh
+Enter Customer Number:7638792
+Enter preveious meter reading:5400
+Enter present meter reading:5800
+UNITS= 400
+NAME: Rakesh
+NO: 7638792
+BILL= 1617.5
