@@ -1,0 +1,73 @@
+#coupon available,coupon=DIWALI
+#coupon available for all,coupon=CHRISMAS
+butter=100
+bread=50
+sugar=80
+atta=100
+cashew=800
+cname=input('Enter Customer Name:')
+cphno=int(input('Enter Customer Moblie Number:'))
+add=input('Enter Customer Address:')
+q1=int(input('Butter Quantity:'))
+q2=int(input('Bread Quantity:'))
+q3=int(input('Sugar Quantity:'))
+q4=int(input('Atta Quantity:'))
+q5=int(input('Cashew Quantity:'))
+coupon=input('Enter Coupon in Capital if available:')
+bill=butter*q1+bread*q2+sugar*q3+atta*q4+cashew*q5
+if bill>3000:
+    tax=bill*5/100
+elif bill>2000:
+    tax=bill*7/100
+elif bill>1000:
+    tax=bill*10/100
+elif bill>500:
+    tax=bill*15/100
+else:
+    tax=100
+tbill=bill+tax
+print('NAME:',cname)
+print('MOBILE NO:',cphno)
+print('ADDRESS:',add)
+print('TAX:',tax)
+print('BILL:',tbill)
+if coupon=='DIWALI':
+    if tbill>=5000:
+        dis=tbill*10/100
+    elif tbill>=3000:
+        dis=tbill*6/100
+    elif tbill>=1000:
+        dis=tbill*4/100
+    else:
+        dis=0
+elif coupon=='CHRISMAS':
+    if tbill>=3000:
+        dis=tbill*20/100
+    elif tbill>=2000:
+        dis=tbill*10/100
+    elif tbill>=1000:
+        dis=tbill*5/100
+    else:
+        dis=0
+else:
+    dis=0
+adbill=tbill-dis
+print('BILL AFTER DISCOUNT:',adbill)
+
+            
+OUTPUT :
+Enter Customer Name:Rakesh
+Enter Customer Moblie Number:29854034
+Enter Customer Address:Gopalapatnam
+Butter Quantity:2
+Bread Quantity:3
+Sugar Quantity:3
+Atta Quantity:10
+Cashew Quantity:2
+Enter Coupon in Capital if available:DIWALI
+NAME: Rakesh
+MOBILE NO: 29854034
+ADDRESS: Gopalapatnam
+TAX: 159.5
+BILL: 3349.5
+BILL AFTER DISCOUNT: 3148.53
