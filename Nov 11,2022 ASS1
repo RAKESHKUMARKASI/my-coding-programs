@@ -1,0 +1,45 @@
+butter=100
+bread=50
+sugar=80
+atta=100
+cashew=800
+cname=input('Enter Customer Name:')
+cphno=int(input('Enter Customer Moblie Number:'))
+add=input('Enter Customer Address:')
+q1=int(input('Butter Quantity'))
+q2=int(input('Bread Quantity'))
+q3=int(input('Sugar Quantity'))
+q4=int(input('Atta Quantity'))
+q5=int(input('Cashew Quantity'))
+bill=butter*q1+bread*q2+sugar*q3+atta*q4+cashew*q5
+if bill>3000:
+    tax=bill*5/100
+elif bill>2000:
+    tax=bill*7/100
+elif bill>1000:
+    tax=bill*10/100
+elif bill>500:
+    tax=bill*15/100
+else:
+    tax=100
+tbill=bill+tax
+print('NAME:',cname)
+print('MOBILE NO:',cphno)
+print('ADDRESS:',add)
+print('TAX:',tax)
+print('BILL:',tbill)
+
+OUTPUT :
+Enter Customer Name:Rakesh
+Enter Customer Moblie Number:2334445
+Enter Customer Address:Gopalapatnam
+Butter Quantity 2
+Bread Quantity 3
+Sugar Quantity 2
+Atta Quantity 10
+Cashew Quantity 2
+NAME: Rakesh
+MOBILE NO: 2334445
+ADDRESS: Gopalapatnam
+TAX: 155.5
+BILL: 3265.5
